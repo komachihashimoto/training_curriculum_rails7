@@ -25,7 +25,7 @@ class CalendarsController < ApplicationController
     @todays_date = Date.today
     # 例)　今日が2月1日の場合・・・ Date.today.day => 1日
 
-    wday_num = Date.today.wday
+    wday_num = Date.today.day - 1
 
     @week_days = []
 
